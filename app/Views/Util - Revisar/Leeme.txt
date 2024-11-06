@@ -1,0 +1,4 @@
+No hice ningun cambio en los css, los pequeños cambios que hice estan el html y comentados
+-Requerimientos de visualización
+	boostrap.min.css
+	app.css

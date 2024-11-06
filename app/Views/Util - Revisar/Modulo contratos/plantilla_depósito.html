@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Sistema de Dirección Exportaciones ICE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Edelbys Díaz Vázquez. KubaProg">
+    
+    <title>ICE DirExports</title>
+
+    <link href="bootstrap.min.css" rel="stylesheet">        
+    <link href="app.css" rel="stylesheet">
+       
+  </head>
+  
+  <body class="d-flex w-100 h-100">
+        
+    <div class="d-flex w-100 h-100 align-items-center mx-auto p-0 flex-column cover-container shadow">
+        <header class="d-flex w-100 bg-white border-bottom m-0">
+            <div class="my-auto">
+                <img
+                    src="ICE_logo.jpg"                    
+                />
+            </div>
+
+            <div class="col flex-column align-items-center mx-auto">
+                <div class="row my-auto py-2 mx-0 t-shadow text-start">                
+                    <h1 class="h4">Dirección de Exportaciones</h1>
+                </div>
+
+                <!-- Barra de navegación-->                
+                <div class="d-flex flex-row-reverse bg-custom rounded-start-5 p-0">
+                    <ul class="nav nav-link-black my-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" aria-current="page">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Potencial</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="colaboradores">Colaboradores</a></li>
+                        <hr class="dropdown-divider"> 
+                        <li><a class="dropdown-item" href="profesiones">Profesiones</a></li>
+                        <li><a class="dropdown-item" href="cargos">Ocupaciones</a></li>
+                        <hr class="dropdown-divider">
+                        <li><a class="dropdown-item" href="cargos">Centros Laborales</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Tramitación</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="">Expedientes</a></li>
+                        <li><a class="dropdown-item" href="tramites">Trámites</a></li>
+                        <hr class="dropdown-divider">
+                        <li><a class="dropdown-item" href="pasaportes">Pasaportes</a></li>
+                        <li><a class="dropdown-item" href="pasaportes">Visas</a></li>
+                        <li><a class="dropdown-item" href="pasaportes">Préstamos Pasaportes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contratación</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="contratos">Contratos</a></li>
+                        <li><a class="dropdown-item" href="prorrogas">Prórrogas</a></li>
+                        <hr class="dropdown-divider">
+                        <li><a class="dropdown-item" href="cierres_contratos">Cierres Contratos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Información Adicional</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="">Action</a></li>
+                        <li><a class="dropdown-item" href="">Another action</a></li>
+                        <li><a class="dropdown-item" href="">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Estadísticas</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="">Action</a></li>
+                        <li><a class="dropdown-item" href="">Another action</a></li>
+                        <li><a class="dropdown-item" href="">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Sistema</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="">Usuarios</a></li>
+                        <li><a class="dropdown-item" href="">Roles</a></li>
+                        <hr class="dropdown-divider">          
+                        <li><a class="dropdown-item" href="">Importar BD</a></li>
+                        <li><a class="dropdown-item" href="">Exportar BD</a></li>          
+                        </ul>
+                    </li>      
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-bounding-box" viewBox="0 0 16 16">
+                            <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5M.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5"/>
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        </svg>                                      
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="">Perfil de Usuario</a></li>
+                        <li><a class="dropdown-item" href="">Cerrar Sesión</a></li>
+                        </ul>
+                    </li>                    
+                    </ul>
+                </div>
+
+                <div class="d-flex flex-row-reverse bg-custom-secondary rounded-start-5 text-white ms-auto me-0  min-h-1 w-75">
+                    <ul class="nav nav-link-white my-auto">    
+                        <li class="nav-item">
+                            <a class="nav-link" href="expedientes/new">Nuevo</a>       
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Buscar...</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="expedientes/show">Ver</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Modificar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Eliminar</a>
+                        </li>
+                    </ul>
+                </div> 
+               <!--Barra de navegación -->
+                
+            </div>
+        </header>
+
+        <main class="w-100 p-3 pt-5">
+            <div class="d-flex align-items-center">                      
+                <div class="rounded-2 mx-auto align-items-center shadow col-6">
+                    <!-- Cinta de nombre de la modificación-->
+                    <div class="p-3 border-bottom-1 bg-custom rounded-top-2 rouded-end-2">
+                        <h1 class="h5 m-0">Depósitos</h1>                
+                    </div>
+                    <!-- Cinta de nombre de la modificación-->
+                    <div class="p-3">
+                        <!-- Zona de Formulario -->
+                        <form class="row gx-3 gy-2 align-items-center justify-content-center" action="expedientes/new" method="post">                       
+                            <div class="row gy-2 justify-content-center">
+                                <div class="col-4">
+                                    <label for="depositos" class="form-label">Depósitos: </label>                        
+                                    <select class="form-control form-select" name="depositos" id="depositos">
+                                        <option class="first-item" disabled selected></option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div> 
+
+                                <div class="col-6">
+                                    <label for="descripcion" class="form-label">Descripción: </label>
+                                    <input type="text" name="descripcion" id="descripcion" class="form-control">
+                                </div>
+
+                            </div>
+                           <!-- Zona de Formulario -->
+
+                            <div class="w-100 btn-center mt-3 my-auto text-center">
+                                <button  class="btn btn-custom" id="aceptar">Aceptar</button>
+                            </div>
+        
+                        </form>
+                    </div>               
+                    
+                </div>
+            </div>
+        </main>
+
+        <footer class="w-100 mt-auto border-top bg-white py-1 text-center">
+            <p class="m-0">&copy; 2024. Sistema de Dirección de Exportaciones. ICE</p>          
+            
+            <p class="m-0"><a href="https://kubaprog.com/" class="text-dark">KubaProg</a>.</p>
+        </footer>
+        
+    </div>
+        <script src="bootstrap.bundle.min.js"></script>        
+  </body>
+</html>

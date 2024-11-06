@@ -1,0 +1,7 @@
+Superadmin user: admin/ice
+Superadmin mail: ice@gmail.com
+Superadmin pass: Admin.24*
+
+Database name: db_ice
+Database user: ice
+Database pass: Admin.24*
